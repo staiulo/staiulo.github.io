@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<head>
+    <link rel="stylesheet" href="css/calcolatrice.css" type="text/css">
+        </style>
+        <script type="text/javascript">
+        function funzioneProdotto() 
+        {
+           var numero1=document.forms["due_numeri"]["n1"].value;  
+           var numero2=document.forms["due_numeri"]["n2"].value;  
+           risultato=numero1*numero2;
+           window.alert("risultato: "+ risultato);
+        }
+        </script>
+        </head>
+<body>
+<h1 id="inserire_dati">Inserire i dati</h1>
+<form name="due_numeri">
+    inserire il primo numero <input type="text" name="n1">
+    inserire il secondo numero <input type="text" name="n2">
+    <input type="button" value="calcola" onclick="funzioneProdotto()">
+</form>
+</body>
+</html>

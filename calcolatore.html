@@ -1,0 +1,36 @@
+<DOCTYPE html>
+    <html lang="it">
+    <head>
+    <title> La mia pagina web</title>
+    <script>
+        function verifica()
+        {
+        var number = document.getElementById('number').value;
+        var image = document.getElementById('immagine');
+            if(number > 18)
+            {
+                image.src = "luna.jfif";
+            }
+            else
+            {
+                image.src= "sole.jpg";
+            }
+        }
+    
+    </script>
+    </head>
+    <body>
+        <h1>inserire il numero</h1> 
+        <input id="number" type="text" name="n1">
+        <button value="calcola" onclick="verifica()">verifica<br/>
+            <div>
+                <img id="immagine">
+            </div>
+            <div style="position:fixed;right: 30px; top:100px">
+                <nav>
+                       <ul> <li><a href="lavori/calcolatrice.html">calcolatrice</a></li></ul>
+                       <ul> <li><a href="lavori/numcas.html">numeri casuali</a></li></ul>
+                       <ul> <li><a href="index.html">chi sono</a></li></ul>
+                </nav>
+    </body>
+    </HTML>
